@@ -1,0 +1,8 @@
+add_executable(test_parallel_augmented_skip_list test_parallel_augmented_skip_list.cpp)
+target_link_libraries(test_parallel_augmented_skip_list PRIVATE psl)
+
+add_executable(test_parallel_skip_list test_parallel_skip_list.cpp)
+target_link_libraries(test_parallel_skip_list PRIVATE psl)
+
+add_executable(benchmark_parallel_skip_list benchmark_skip_list.cc)
+target_link_libraries(benchmark_parallel_skip_list PRIVATE psl)
